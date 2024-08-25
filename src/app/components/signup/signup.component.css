@@ -1,0 +1,97 @@
+/* Center the signup form on the page */
+.signup-container {
+  width: 350px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Style the heading */
+.signup-container h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+}
+
+/* Style the form labels */
+.signup-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Style the input fields */
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"],
+.signup-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Style the select dropdown */
+.signup-container select {
+  appearance: none;
+  background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDE0IDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgMUwxMCAxIiBzdHJva2U9IiM3RjdGNzgiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0xIDE1TDEwIDE1IiBzdHJva2U9IiM3RjdGNzgiIHN0cm9rZS13aWR0aD0iMiIvPjwvc3ZnPg==') no-repeat right 10px center;
+  background-size: 12px;
+}
+
+/* Style the submit button */
+.signup-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Change button color on hover */
+.signup-container button:hover {
+  background-color: #218838;
+}
+
+/* Disable button style */
+.signup-container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Add some spacing around the form fields */
+.signup-container div {
+  margin-bottom: 20px;
+}
+
+/* Additional styles for the form */
+.signup-container form {
+  display: flex;
+  flex-direction: column;
+}
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: left; /* Ensure the text is left-aligned */
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+  .signup-container {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
